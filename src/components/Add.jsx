@@ -35,7 +35,7 @@ function Add({setAddVideoStatus}) {
   const handleUpload = async(e)=>{
     e.preventDefault()
     const {caption, imageUrl, embedLink}=videoDetails
-    if(!caption, || !imageUrl || !embedLink){
+    if(!caption || !imageUrl || !embedLink){
       toast.info('Please fill the form completely')
     }
     else{
